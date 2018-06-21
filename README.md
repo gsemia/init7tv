@@ -140,7 +140,7 @@ It is a challenge to read multicast streams with wireless devices. I am using an
    After=basic.target network.target
 
    [Service]
-   ExecStart=/root/udpxy-1.0.23-12/udpxy -p 4022 -T -s -n -20
+   ExecStart=/root/udpxy-1.0.23-12/udpxy -p 4022 -T -S -n -20
    ExecReload=/bin/kill -HUP $MAINPID
    KillMode=process
    Restart=always
